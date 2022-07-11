@@ -1,0 +1,160 @@
+@import "@wordpress/block-library/build-style/common.css";
+@import "@wordpress/block-library/build-style/style.css";
+@import "@wordpress/block-library/build-style/theme.css";
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wp-block-column {
+    padding: 0 15px;
+}
+
+.content-wrap p {
+    margin: 1.5rem 0;
+}
+
+.wp-block-gallery .blocks-gallery-image img, .wp-block-gallery .blocks-gallery-item img, .blocks-gallery-grid .blocks-gallery-image img, .blocks-gallery-grid .blocks-gallery-item img {
+    border-radius: 0.5rem;
+    color: inherit;
+}
+
+.paragraph p {
+    margin: 1rem 0;
+}
+
+.wp-block-image img {
+    margin: auto;
+    border-radius: 0.5rem !important;
+}
+
+.wp-block-embed iframe {
+    margin: auto;
+}
+
+.wp-block-media-text {
+    margin: 2rem 0;
+}
+
+.wp-block-media-text__media img {
+    border-radius: 1rem;
+}
+
+.wp-block-media-text__content h4 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.wp-block-media-text__content  p {
+    font-size: 1.15rem;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.wp-block-media-text__media video {
+    border-radius: 1rem;
+}
+
+.half-width h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 2rem;
+}
+
+.half-width p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.full-width-img {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-9px);
+}
+
+.full-width-img img {
+    border-radius: 0 !important;
+    width: 100%;
+    height: auto;
+}
+
+.has-large-font-size {
+    font-size: 3rem;
+}
+
+.event-content {
+    padding: 2rem 0;
+}
+
+.event-content h2,
+.content-page h2 {
+    font-size: 2rem;
+    font-family: 'Ubuntu';
+    margin: 1.5rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .half-width {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .half-width h2 {
+        line-height: 1.05;
+        font-size: 2rem;
+    }
+
+    .has-large-font-size {
+        font-size: 2rem;
+    }    
+    
+    .wp-block-media-text__media img {
+        border-radius: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .wp-block-media-text__content h4 {
+        line-height: 1.2;
+    }
+
+    .wp-block-media-text .wp-block-media-text__content {
+        padding: 0 1rem !important;
+    }
+n
+    .event-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .fc .fc-button {
+        font-size: 0.6rem !important;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 0.9rem !important;
+    }
+
+}
+
+.fc-daygrid-event {
+    white-space: normal !important;
+}
+
+
+.bio-content p {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
