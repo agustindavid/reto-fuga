@@ -36,7 +36,7 @@
 
         try {
             const response = await axios({
-            url:variables.basePath,
+            url:'https://mdsmx.xyz/fuga/graphql',
             method: 'POST',
             timeout: 9000,
             data: {
