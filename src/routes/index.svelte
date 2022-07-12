@@ -117,7 +117,7 @@
     <div class="container mx-auto">
       <div class="flex flex-wrap flex-row items-center">
             <div class=" basis-6/12 py-6 lg:py-0 lg:basis-3/12 px-4 lg:px-10 my-8">
-                <img class=" w-auto max-h-16  mx-auto ">
+                <img class=" w-auto max-h-16  mx-auto " alt="none">
             </div>
       </div>
     </div>
