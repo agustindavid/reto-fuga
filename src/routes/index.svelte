@@ -99,7 +99,7 @@
 
 <Hero />
 
-<div class="reto-fuga-wrap">
+<div class="reto-fuga-wrap mt-8">
     <div class="container mx-auto px-4">
         <div class="content-page">
             {@html content}
