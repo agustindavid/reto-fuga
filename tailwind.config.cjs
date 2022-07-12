@@ -6,6 +6,9 @@ module.exports = {
       colors: {
         'fuga-pink': '#e50d4e',
       },
+      fontFamily: {
+        'montserrat': ['"Montserrat"', 'sans-serif']
+      }
     },
   },
   plugins: [],

@@ -42,8 +42,8 @@
 }
 
 .wp-block-media-text__content h4 {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
@@ -63,7 +63,7 @@
 .half-width h2 {
     font-size: 3rem;
     line-height: 1.2;
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 2rem;
 }
 
@@ -100,7 +100,7 @@
 .event-content h2,
 .content-page h2 {
     font-size: 2rem;
-    font-family: 'Ubuntu';
+    font-family: 'Montserrat';
     margin: 1.5rem 0;
 }
 
