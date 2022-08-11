@@ -132,6 +132,10 @@
     </div>
 </div>
 
+<div class="bg-fuga-pink py-4 text-center text-white">
+    Todos los derechos reservados. Reto Fuga 2022
+</div>
+
 {:else}
 
 <div class="w-full h-screen text-white bg-fuga-pink flex justify-center items-center text-4xl">
