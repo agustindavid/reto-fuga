@@ -26,6 +26,7 @@
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
 		"svelte": "^3.44.0",
+		"svelte-carousel": "^1.0.19",
 		"svelte-check": "^2.7.1",
 		"svelte-preprocess": "^4.10.7",
 		"tailwindcss": "^3.1.5",
@@ -34,7 +35,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sendgrid/mail": "^7.7.0",
 		"@wordpress/block-library": "^6.0.18",
+		"daisyui": "^2.19.0",
 		"dotenv": "^16.0.1"
 	}
 }

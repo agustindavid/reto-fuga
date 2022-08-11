@@ -2,9 +2,8 @@
     import axios from "axios";
     import axiosRetry from 'axios-retry';
     import Hero from '../components/hero.svelte'
+    import Carousel from '../components/Carousel.svelte'
     import { variables } from "../api/variables";
-
-
     
 
     const query = `
@@ -13,6 +12,13 @@
             id
             title
             content
+            slidesHome {
+                slides {
+                    slide {
+                        mediaItemUrl
+                    }
+                }
+            }
         }
     }
     `;
@@ -48,12 +54,15 @@
 
             if (responseObj.data.pageBy) {
                 const content = responseObj.data.pageBy.content;
+                const slides = responseObj.data.pageBy.slidesHome.slides;
                 isLoading=false;
                 serverDown=false;
                 
+
                 return {
                     props: {
                         content,
+                        slides,
                     }
                 };
                 
@@ -87,9 +96,12 @@
 </script>
 
 <script>
+
     export let content;
+    export let slides;
     let title = 'Reto Fuga 2022'
 
+    //console.log(slides);
     const seoProps= {
         title,
     }
@@ -99,9 +111,22 @@
 
 <Hero />
 
+
 <div class="reto-fuga-wrap mt-8">
     <div class="container mx-auto px-4">
         <div class="content-page">
+            <div class=" text-center hidden">
+                <a class=" text-gray-800 no-underline "  href="https://mdsmx.xyz/fuga/wp-content/uploads/2022/06/Poster-RETO-FUGA.jpg" download>Ver poster del evento</a>
+            </div>
+                <p>Conoce la región media de San Luis Potosí y parte de la impresionante Huasteca Potosina mientras das todo sobre la bici en el Reto Fuga 2022.</p>
+                <h2>Locación: Ríoverde, San Luis Potosí</h2>
+                <p><strong>Rioverde</strong>&nbsp;es el centro agrícola, económico y demográfico más importante de la&nbsp;<strong>Región Media</strong>&nbsp;de San Luis Potosí. Se localiza a aproximadamente 140 km al oriente de la capital del estado.</p>
+                <p>Rioverde ofrece unas de las áreas naturales más atractivas de la entidad, la&nbsp;<strong>Laguna de la Media Luna</strong>, ideal para practicar esnórquel, natación, salto en tirolesa y campismo.</p>
+                <p>Otro atractivo (no menos espectacular) en Rioverde es la&nbsp;<strong>Gruta de la Catedral</strong>, en la comunidad de Alamitos. Este tesoro subterráneo recibe ese nombre porque en su interior se ha formado, durante miles de años, un enorme salón con formaciones calcáreas semejantes a un púlpito, con altar y sus respectivos reclinatorios. Otro sitio natural de gran interés es el area protegida La Loma, ideal para los amantes del senderismo</p>
+
+
+                <Carousel slides={slides} />
+
             {@html content}
         </div>
     </div>
